@@ -1,0 +1,44 @@
+
+.left
+	@extend .left-top
+	display: flex
+	z-index: 999
+	
+.right
+	@extend .right-top
+	display: flex
+	z-index: 999
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.logo-container
+	height: 30px
+	width: 30px
+	img
+		width: 100%
+		height: auto
+.nav-text
+	@extend .poppins
+	font-weight: 900
+	font-size: 16px
+	color: #000
+	margin-left: 24px
+
+.nav-text.active
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -16px
+		left: 0
+		height: 1px
+		width: 100%
+		border-bottom: $special-color solid 5px
+		animation: navAnimation $transition-nav
+
+@keyframes navAnimation
+	from
+		width: 0
+	to
+		width: 100%

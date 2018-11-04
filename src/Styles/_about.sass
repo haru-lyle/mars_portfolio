@@ -1,0 +1,52 @@
+.about-container
+	height: 100vh
+	display: flex
+	position: relative
+	.left-about
+		width: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.right-about
+		width: 50%
+		background: #e0e0e0
+	.about-text
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,-50%)
+		.text-rotate-about
+			@extend .poppins
+			transform: rotate(270deg)
+			font-size: 90px
+			font-weight: 900
+			color: $special-color
+
+.about-content
+	padding: 0 64px
+	.title
+		@extend .poppins
+		font-size: 24px
+		font-weight: 900
+	.context
+		@extend .poppins
+		font-size: 12px
+		font-weight: 600
+		color: $third-color
+.about-container:before
+	content: ''
+	position: absolute
+	top: 0
+	left: 50%
+	height: 50vh
+	width: 1px
+	border-right: $special-color solid 12px
+	transform: translate(-50%,0)
+	animation: aboutLine $transition-nav
+
+@keyframes aboutLine
+	from
+		height: 0
+	to
+		height: 50vh

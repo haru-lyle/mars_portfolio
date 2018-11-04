@@ -1,0 +1,70 @@
+.home-container
+	position: relative
+	height: 100vh
+	width: 100%
+	background: $primary-background
+.home-image-container
+	width: 50vw
+	img
+		width: 100%
+		height: auto
+// .home-text-container
+// 	span
+// 		@extend .poppins
+// 		color: $special-color
+// 		font-weight: 900
+// 		font-size: 100px
+// 		font-style: italic
+// 		position: relative
+// 		&:before
+// 			content: 'KAMUSTA'
+// 			position: absolute
+// 			top: -25%
+// 			z-index: -1
+// 			left: 0
+// 			width: 100%
+// 		&:after
+// 			content: 'KAMUSTA'
+// 			position: absolute
+// 			bottom: -25%
+// 			left: 0
+// 			width: 100%
+// 			z-index: -1
+
+.home-hello
+	font-size: 14px
+	font-weight: 900
+	color: $third-color
+	padding: 24px 0
+
+.scroll-message
+	padding-bottom: 24px
+	transform: translate(calc(-50% + 15px),0)
+	.home-rotate
+		@extend .context-poppins
+		font-size: 12px
+		font-weight: 600
+		color: $third-color
+		transform: rotate(270deg)
+		display: flex
+		align-items: center
+		.fa
+			font-size: 16px
+			margin-right: 16px
+
+.home-contact-icon
+	.icon
+		padding: 24px 0
+		cursor: pointer
+		color: $third-color
+		transition: $transition-icon
+		&:hover
+			color: #000
+.gmail	
+	@extend .poppins
+	font-size: 14px
+	cursor: pointer
+	color: $third-color
+	transition: $transition-icon
+	&:hover
+		color: #000

@@ -1,0 +1,50 @@
+.design-process-container
+	height: 100vh
+	padding: 15vh 10vw 0 10vw
+	.design-title
+		@extend .poppins
+		font-size: 32px
+		font-weight: 900
+		color: $primary-color
+		margin-bottom: 16px
+	.design-summary
+		@extend .poppins
+		font-size: 14px
+		margin-bottom: 16px
+		font-weight: 600
+		color: $third-color
+
+.design-container
+	display: flex
+	flex-wrap: wrap
+	.design
+		width: calc(25% - 16px)
+		background: #fff
+		border-bottom: $special-color solid 2px
+		margin: 8px
+		box-shadow: 5px 10px #eee
+		animation: scale $transition-nav
+		.index
+			@extend .poppins
+			padding: 16px 32px
+			font-size: 24px
+			color: $special-color
+			font-weight: 900
+		.title
+			@extend .poppins
+			font-size: 16px
+			font-weight: 900
+			color: $primary-color
+			padding: 16px 32px
+		.content
+			@extend .poppins
+			font-size: 10px
+			font-weight: 600
+			color: $third-color
+			padding: 16px 32px
+
+@keyframes scale
+	from
+		transform: scale(0.7, 0.7)
+	to
+		transform: scale(1, 1)
